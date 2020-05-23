@@ -1,12 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/all.css">
+  <title>Udemy Card Demo</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      position: relative;
+      width: 300px;
+      height: 500px;
+      border: 1px solid #ccc;
+      box-shadow: 0px 0px 53px -15px rgba(0, 0, 0, 0.75);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .container {
+      margin-top: 60px;
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    button {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      font-size: 18px;
+      width: 100%;
+      height: 50px;
+      border: none;
+      color: white;
+      background-color: #fd79a8;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>標題</h1>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1cf9c13e09f5f2ec5139b6475751b310&auto=format&fit=crop&w=1350&q=80"
+      alt="">
+    <h3>Misha</h3>
+
+    <div class="container">
+      <div class="col">
+        <div class="title">ID</div>
+        <div class="description">12345</div>
+      </div>
+      <div class="col">
+        <div class="title">Age</div>
+        <div class="description">3 years</div>
+      </div>
+      <div class="col">
+        <div class="title">Registry</div>
+        <div class="description">AKC</div>
+      </div>
+    </div>
+
+    <button onclick="buttonAction()">View More</button>
+  </div>
+
+  <script>
+    function buttonAction() {
+      alert('you clicked this button')
+    }
+  </script>
 </body>
+
 </html>
